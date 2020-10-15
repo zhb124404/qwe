@@ -1,12 +1,31 @@
 theme: jekyll-theme-cayman
 
 # Name of website
-title: My Website
+title: HHHHHHH
+collections:
+  episodes:
+    output: true
+  seasons:
+    output: true
+  characters:
+    output: true
 
-# --- List of links in the navigation bar --- #
-navbar-links:
-  About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+defaults:
+  - scope:
+      path: ""
+      type: "episodes"
+    values:
+      layout: "episode"
+  - scope:
+      path: ""
+      type: "characters"
+    values:
+      layout: "character"
+  - scope:
+      path: ""
+      type: "seasons"
+    values:
+      layout: "season"
+
+gems:
+  - octopress-paginate
